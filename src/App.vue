@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
 
+  <div id="app">
     <ul>
       <li v-for="(person, index) in people">
         {{ person }} - {{ index }}
@@ -8,7 +8,7 @@
     </ul>
 
     <div v-for="(value, key, index) in catStats">
-      <div>{{ key }}: {{ value }} - {{ index }}</div>
+      <div>{{ index }} - {{ key }}: {{ value }}</div>
     </div>
 
     <div v-for="n in amountOfHorizontalRules">
@@ -28,7 +28,7 @@
           breed: 'Grey Tortoiseshell',
           favoriteThing: 'sleeping'
         },
-        amountOfHorizontalRules: 5
+        amountOfHorizontalRules: 46
       }
     }
   }
